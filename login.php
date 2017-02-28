@@ -7,7 +7,7 @@ $p=$_POST['pass'];
 $user_name="bc735e9a1d9622";
 $password="47acc5cd";
 $db="rachitdb";
-$c=mysqli_connect($db);
+$c=mysqli_connect('localhost',$user_name,$password,$db);
 $query="SELECT * FROM login where username ='$u' and password='$p' ";
 $result=mysqli_query($c,$query);
 $num=mysqli_num_rows($result);
