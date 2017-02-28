@@ -4,7 +4,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 {
 $u=$_POST['userid'];
 $p=$_POST['pass'];
-$db="rachidb";
+$db="rachitdb";
 $c=mysqli_connect($db);
 $query="SELECT * FROM login where username ='$u' and password='$p' ";
 $result=mysqli_query($c,$query);
